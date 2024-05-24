@@ -1,0 +1,1 @@
+[{"dst":"default","gateway":"192.168.68.1","dev":"wlo1","protocol":"dhcp","metric":600,"flags":[]},{"dst":"169.254.0.0/16","dev":"wlo1","scope":"link","metric":1000,"flags":[]},{"dst":"192.168.68.0/24","dev":"wlo1","protocol":"kernel","scope":"link","prefsrc":"192.168.68.154","metric":600,"flags":[]}]
