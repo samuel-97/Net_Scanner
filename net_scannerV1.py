@@ -7,7 +7,7 @@ os.system("ip -j r > ipconfig.json")
 
 
 # open json file and extract netmask as variable target_ip
-file = open("/home/samuelrodier/Repos/Network_Scanner/ipconfig.json")
+file = open("/home/samuelrodier/Repos/Networking_Projects/Network_Scanner/ipconfig.json")
 
 js = json.load(file)
 file.close()

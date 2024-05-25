@@ -5,10 +5,9 @@ from scapy.all import ARP, Ether, srp
 import json
 import os
 import requests
-import json
 
 # run ip tool to find network address
-os.system("ip -j r > ipconfig.json")
+os.system("ip -j r > '/home/samuelrodier/Repos/Networking_Projects/Network_Scanner/ipconfig.json")
 
 
 # open json file and extract netmask as variable target_ip
@@ -21,6 +20,7 @@ target_ip = js[2]['dst']
 # IP Address for the destination
 # create ARP packet
 arp = ARP(pdst=target_ip)
+
 # create the Ether broadcast packet
 # ff:ff:ff:ff:ff:ff MAC address indicates broadcasting
 ether = Ether(dst="ff:ff:ff:ff:ff:ff")
